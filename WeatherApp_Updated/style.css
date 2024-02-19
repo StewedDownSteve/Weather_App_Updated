@@ -1,0 +1,192 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0.9)),
+              url('https://source.unsplash.com/1600x900/?landscape');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 120%;
+  color: white;
+}
+
+.card {
+  background: #272727;
+  color: #ddd;
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 420px;
+  margin: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Styles for screens with a width of 600px or less */
+@media (max-width: 600px) {
+  .card {
+    max-width: 100%; /* Adjust the maximum width for smaller screens */
+  }
+
+  .forecast-card {
+    width: 80px; /* Adjust the width of forecast cards for smaller screens */
+  }
+
+  .icon {
+    width: 30px; /* Adjust the size of the weather icons for smaller screens */
+    height: 30px;
+  }
+
+  .forecast-card div {
+    font-size: 12px; /* Adjust the font size of day names for smaller screens */
+  }
+}
+
+/* Add more media queries as needed for other screen sizes */
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button, .geolocation-btn {
+  margin: 0.5em;
+  border-radius: 8px;
+  border: none;
+  height: 44px;
+  width: 44px;
+  outline: none;
+  background: #7c7c7c2b;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover, .geolocation-btn:hover {
+  background: #7c7c7c6b;
+  transform: scale(1.1);
+  transition: 0.2s ease-in-out;
+}
+
+input.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 24px;
+  background: #7c7c7c2b;
+  color: white;
+  font-family: inherit;
+  font-size: 105%;
+  width: calc(100% - 100px);
+}
+
+h1.temp {
+  margin: 0;
+  margin-bottom: 0.2em;
+  font-size: 2em;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  text-transform: capitalize;
+  margin-left: 8px;
+}
+
+.weather.loading,
+.geolocation-btn.loading {
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+
+.weather.loading:after,
+.geolocation-btn.loading:after {
+  visibility: visible;
+  content: "";
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-left: 8px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  border-top: 3px solid transparent;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.app-title {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.geolocation-btn {
+  padding: 0.4em 1em;
+  font-size: 90%;
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+.geolocation-btn span {
+  margin-right: 8px; /* Add spacing between the icon and text */
+}
+
+/* forecast addition */
+.forecast {
+  margin-top: 20px;
+}
+
+/* .forecast-card {
+  display: inline-block;
+  margin: 0 10px;
+  text-align: center;
+} */
+
+
+/* Weather Icon Styling */
+.icon {
+  width: 50px; /* Adjust the size of the weather icons */
+  height: 50px;
+}
+
+/* Forecast Card Styling */
+.forecast-card {
+  display: inline-block;
+  width: 70px; /* Set a fixed width for the cards */
+  margin: 0 5px;
+  padding: 10px; /* Add padding for better spacing */
+  text-align: center;
+  background: #373737; /* Add a background color to the forecast cards */
+  border-radius: 10px; /* Add border-radius for rounded corners */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Weather Icon Styling */
+.icon {
+  width: 50px; /* Adjust the size of the weather icons */
+  height: 50px;
+}
+
+/* Day Styling */
+.forecast-card div {
+  margin-top: 5px; /* Adjust top margin for better spacing */
+}
+
+/* Forecast Container Styling */
+.forecast-container {
+  white-space: nowrap; /* Prevent cards from breaking into a new line */
+  overflow-x: auto; /* Add horizontal scroll if the cards exceed the container width */
+  margin-top: 10px; /* Adjust margin for spacing between the weather details and forecast cards */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
