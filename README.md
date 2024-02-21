@@ -1,7 +1,6 @@
 # OH, Weahter! App
 Took an old project, a simple weather app that fetches an API, and beefed it up!
 
-**Link to project:** http://recruiters-love-seeing-live-demos.com/
 
 ![img](https://github.com/StewedDownSteve/Weather_App_Updated/blob/main/WeatherApp_Updated/WeatherApp_Updated_img.png)
 
