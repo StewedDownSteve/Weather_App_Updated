@@ -12,7 +12,7 @@ Originally developed with HTML, CSS, and JavaScript, this weather app served as 
 
 ## Optimizations
 
-During the optimization phase, I took a closer look at fine-tuning the app's performance and making it more user-friendly. I dabbled in some AJAX magic, using asynchronous JavaScript to make API requests smoother, giving the app a boost in efficiency. To speed things up for our frequent visitors, I added a bit of caching, storing commonly accessed items locally. I also added some responsiveness to the CSS.
+During the optimization phase, I took a closer look at fine-tuning the app's performance and making it more user-friendly. I dabbled in some AJAX, using asynchronous JavaScript to make API requests smoother, giving the app a boost in efficiency. To speed things up for returning visitors, I added a bit of caching, storing commonly accessed items locally. I also added some responsiveness to the CSS.
 
 ## Lessons Learned:
 
@@ -26,4 +26,8 @@ If I were to do anything else I'd start over from scratch. It was fun to just li
 Take a look at the original and see how it expanded:
 
 **API Weahter App OLD** https://github.com/StewedDownSteve/APIWeatherApp
+
+**Drag and Drop Kanban:** https://github.com/StewedDownSteve/Drag_Drop_kanban
+
+**Weather App(Geo Location):** https://github.com/StewedDownSteve/Weather_App_Updated/tree/main
 
